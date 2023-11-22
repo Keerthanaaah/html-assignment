@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            change color
+        </title>
+    </head>
+    <style>
+        .button1{
+            background-color: cornflowerblue;
+            padding: 22px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:20px;
+
+        }
+    </style>
+    <body>
+        <button type="button" class="button1" >click</button>
+
+        <script>
+var color=[" #ff3333"," #cc33ff","#ff4da6","#3399ff"]
+var i=0;
+document.querySelector("button").addEventListener("click",function(){
+    i=1<color.length ? ++i : 0;
+
+document.querySelector("body").style.backgroundColor=color[i]})
+        
+        </script>
+    </body>
+</html>
